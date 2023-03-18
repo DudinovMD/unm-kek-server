@@ -61,7 +61,7 @@ io.sockets.on("connection", function (socket) {
         socket.handshake.query &&
         socket.handshake.query.roomId;
 
-    if (roomId && uid) {
+    if (roomId) {
         socket.join(roomId);
     }
 
